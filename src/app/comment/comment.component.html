@@ -1,0 +1,14 @@
+<div class="container">
+
+    <form class="col-md-6" (ngSubmit)="reviewBook()">
+        <div class="form-group">
+            <h2 >Review {{book.title}}</h2>
+        </div>
+        <div class="form-group">
+            <label for="my-input">Add your review here</label>
+            <textarea name="text" [(ngModel)]="text" placeholder="your review comes here"></textarea>
+            
+        </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+        </form>
+        </div>
